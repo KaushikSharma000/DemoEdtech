@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const serverless = require('serverless-http');
+
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
@@ -58,5 +58,4 @@ app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)
 })
 
-module.exports = app;
-module.exports.handler = serverless(app);
+
